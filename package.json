@@ -1,13 +1,18 @@
 {
   "name": "dsh-soul",
   "version": "0.1.0",
+  "description": "给 DSH Agent 一个灵魂：感情、记忆、身体感知、独立思想、表情包、日记、人设与人生总结",
   "type": "module",
   "main": "index.js",
-  "files": ["index.js", "lib", "client", "assets", "cordis.patch.yml"],
+  "license": "MIT",
+  "files": ["index.js", "lib", "client", "assets", "cordis.patch.yml", "README.md"],
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" }
   },
   "dshClient": {
-    "entry": "client/index.js"
+    "entry": "client/index.jsx"
+  },
+  "peerDependencies": {
+    "dsh-better-sidebar": ">=0.1.0"
   }
 }
